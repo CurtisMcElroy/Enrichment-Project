@@ -35,8 +35,10 @@ public class Sprite {
 	
 	protected void loadImage(String imageName) {
 		
-		ImageIcon ii = new ImageIcon(imageName);
+		ImageIcon ii = new ImageIcon("file:///C:/Users/mcelrc1/eclipse-workspace/enrichmentProject2/src/resources/New%20Piskel.png");
 		image = ii.getImage();
+		
+		getImageDimensions();
 	}
 	
 	
