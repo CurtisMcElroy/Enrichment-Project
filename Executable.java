@@ -14,10 +14,9 @@ import javax.swing.JFrame;
 
 
 
-public class SpriteMovement extends JFrame {
+public class Executable extends JFrame {
 
-	public SpriteMovement() {
-		
+	public Executable() {
 		initUI();
 		
 	}
@@ -39,13 +38,14 @@ public class SpriteMovement extends JFrame {
 		
 	}
 	
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		EventQueue.invokeLater(() -> {
-			SpriteMovement ex = new SpriteMovement();
+			Executable ex = new Executable();
 			ex.setVisible(true);
 		});
 	}
 }
+
 
 
