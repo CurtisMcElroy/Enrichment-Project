@@ -23,11 +23,11 @@ public class Player extends Sprite {
 		
 		/******************************************** IMPORTANT *******************************************
 		This is the sprite loader. Change the Image icon to change the image.
-		Change the 'w' an 'h' integers to change the size of the sprite.
-		IN THE FINAL VERSION, DO NOT PUT A PLAYER SPRITE INTO THIS VOID. YOU PUT THE WORLD INTO THIS VOID.
+		Change the 'w' an 'h' integers to change the size of the sprite. - need to implement
+		This loads the player model.
 		**************************************************************************************************/
 		
-		loadImage("file:///C:/Users/mcelrc1/eclipse-workspace/enrichmentProject2/src/resources/New%20Piskel.png");
+		loadImage("src/resources/New Piskel.png");
 		getImageDimensions();
 		
 	}
@@ -38,11 +38,11 @@ public class Player extends Sprite {
 		y += dy;
 		
 		if (x < 1) {
-			x = 1;
+			x = 0;
 		}
 		
 		if (y < 1) {
-			y = 1;
+			y = 0;
 		}
 	}
 	
@@ -93,5 +93,4 @@ public class Player extends Sprite {
 	    }
 	}
 }
-
 
