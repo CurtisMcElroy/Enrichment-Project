@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 
+
 public class Base extends JPanel implements ActionListener {
 
 	private Timer timer;
@@ -41,6 +42,8 @@ public class Base extends JPanel implements ActionListener {
 		// initiate any enemy sprites here.
 		
 		player = new Player(PLAYER_X, PLAYER_Y);
+		
+		
 		
 		timer = new Timer(DELAY, this);
 		timer.start();
@@ -149,4 +152,3 @@ public class Base extends JPanel implements ActionListener {
 		}
 	}
 }
-
