@@ -44,6 +44,10 @@ public class Player extends Sprite {
 		if (y < 1) {
 			y = 0;
 		}
+		
+		if (x > 1679) {
+			x = 1679;
+		}
 	}
 	
 	/*********** READ ME ***********
@@ -72,7 +76,8 @@ public class Player extends Sprite {
 			dy = 3;
 		}
 	}
-
+//change the values of dy & dx to change speed of player
+	
 	public void keyReleased(KeyEvent e) {
 	
 		int key = e.getKeyCode();
@@ -92,5 +97,11 @@ public class Player extends Sprite {
 	            dy = 0;
 	    }
 	}
+	
+	public void HubWall(KeyEvent e) {
+		if(y == 200 && x == 200) {
+			dy = 0;
+			dx = 0;
+		}
+	}
 }
-
