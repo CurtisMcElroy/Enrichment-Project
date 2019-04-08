@@ -25,7 +25,7 @@ public class Executable extends JFrame {
 		
 		add(new Base());
 		setTitle("'Untitled'");
-		setSize(800,500);
+		setSize(1680,1050);
 		setBackground(Color.white);
 		
 		
@@ -46,6 +46,4 @@ public static void main(String[] args) {
 		});
 	}
 }
-
-
 
