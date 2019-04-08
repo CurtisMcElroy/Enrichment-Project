@@ -80,15 +80,15 @@ public class Player extends Sprite {
 		if (key == KeyEvent.VK_A) {
 			    dx = 0;
 		}
-	     if (key == KeyEvent.VK_RIGHT) {
+	     if (key == KeyEvent.VK_D) {
 	            dx = 0;
 	    }
 
-	     if (key == KeyEvent.VK_UP) {
+	     if (key == KeyEvent.VK_W) {
 	            dy = 0;
 	    }
 
-	     if (key == KeyEvent.VK_DOWN) {
+	     if (key == KeyEvent.VK_S) {
 	            dy = 0;
 	    }
 	}
