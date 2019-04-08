@@ -57,19 +57,19 @@ public class Player extends Sprite {
 		int key = e.getKeyCode();
 	
 		if (key == KeyEvent.VK_A) {
-			dx = -1;
+			dx = -3;
 		}
 	
 		if (key == KeyEvent.VK_D) {
-			dx = 1;
+			dx = 3;
 		}
 	
 		if (key == KeyEvent.VK_W) {
-			dy = -1;
+			dy = -3;
 		}
 	
 		if (key == KeyEvent.VK_S) {
-			dy = 1;
+			dy = 3;
 		}
 	}
 
