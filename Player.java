@@ -33,20 +33,24 @@ public class Player extends Sprite {
 	}
 	
 	public void move() {
-		//This is to start to move the sprite.
+		//This is to add screen bounds for the player.
 		x += dx;
 		y += dy;
 		
-		if (x < 1) {
-			x = 0;
+		if (x < 200) {
+			x = 200;
 		}
 		
-		if (y < 1) {
-			y = 0;
+		if (y < 200) {
+			y = 200;
 		}
 		
-		if (x > 1679) {
-			x = 1679;
+		if (x > 1460) {
+			x = 1460;
+		}
+		
+		if (y > 770) {
+			y = 770;
 		}
 	}
 	
@@ -61,19 +65,19 @@ public class Player extends Sprite {
 		int key = e.getKeyCode();
 	
 		if (key == KeyEvent.VK_A) {
-			dx = -3;
+			dx = -6;
 		}
 	
 		if (key == KeyEvent.VK_D) {
-			dx = 3;
+			dx = 6;
 		}
 	
 		if (key == KeyEvent.VK_W) {
-			dy = -3;
+			dy = -6;
 		}
 	
 		if (key == KeyEvent.VK_S) {
-			dy = 3;
+			dy = 6;
 		}
 	}
 //change the values of dy & dx to change speed of player
